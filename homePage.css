@@ -1,0 +1,309 @@
+/* General styles for small screens */
+@media (max-width: 1200px) {
+  .menu {
+    width: 95%;
+    padding: 3px 5px 3px 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.5em;
+    margin: 0 2.5%;
+  }
+
+  .headi {
+    gap: 25px;
+    font-size: 1.3em;
+  }
+
+  .Hire {
+    font-size: 28px;
+  }
+
+  .dow {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+    width: 250px;
+    font-size: 20px;
+  }
+
+  .pic {
+    width: 300px;
+    height: 400px;
+    margin: 150px 0 0 50px;
+  }
+
+  .general {
+    font-size: 50px;
+    width: 90%;
+    right: 10px;
+    bottom: 90px;
+  }
+
+  .general > .item_1,
+  .general > .item_2 {
+    font-size: 40px;
+  }
+
+  .general > .item_2 > span {
+    font-size: 30px;
+  }
+
+  .mode {
+    top: 90px;
+    right: 150px;
+    font-size: 16px;
+  }
+
+  .drawing {
+    border-radius: 2800px;
+  }
+
+  .fa {
+    right: 100px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .menu {
+    width: 95%;
+    padding: 3px 5px 3px 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.5em;
+    margin: 0 2.5%;
+  }
+
+  .headi {
+    gap: 25px;
+    font-size: 1.1em;
+  }
+
+  .Hire {
+    font-size: 1.3em;
+  }
+
+  .dow {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+    width: 250px;
+    font-size: 20px;
+  }
+
+  .pic {
+    width: 300px;
+    height: 400px;
+    margin: 150px 0 0 50px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .menu {
+    width: 95%;
+    padding: 3px 5px 3px 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin: 0 2.5%;
+  }
+}
+
+@media (max-width: 920px) {
+  .menu {
+    width: 95%;
+    padding: 3px 5px 3px 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1.1em;
+    margin: 0 2.5%;
+  }
+
+  .headi {
+    gap: 15px;
+    text-align: center;
+  }
+
+  .Hire {
+    font-size: 22px;
+  }
+
+  .drawing {
+    height: 550px;
+    top: 0;
+    margin: 20px 1%;
+  }
+
+  .dow {
+    font-size: 18px;
+    top: 200px;
+  }
+
+  .pic {
+    width: 250px;
+    height: 300px;
+    margin: 100px 0 0 50px;
+  }
+
+  .general {
+    font-size: 30px;
+    right: 5px;
+    bottom: 250px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .general > .item_1,
+  .general > .item_2 {
+    font-size: 25px;
+  }
+
+  .general > .item_2 > span {
+    font-size: 20px;
+  }
+
+  .fa {
+    font-size: 18px;
+  }
+  .Smedia {
+    top: 20%;
+  }
+
+  .mode {
+    top: 70px;
+    right: 100px;
+    font-size: 14px;
+  }
+}
+
+/* Styles for very small screens (e.g., mobile) */
+@media (max-width: 840px) {
+  .menu {
+    flex-direction: column;
+    padding: 80px 20px;
+    width: 250px;
+    border-radius: 10px;
+    height: 100vh;
+    left: -500px;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .burger-icon {
+    display: flex;
+  }
+
+  .headi {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .headi > a {
+    border: solid 1px;
+    width: 200px;
+    padding: 5px;
+  }
+  .name {
+    font-size: 1.2em;
+  }
+
+  .Hire {
+    font-size: 22px;
+  }
+
+  .dow {
+    width: 200px;
+    font-size: 18px;
+    top: 420px;
+  }
+
+  .pic {
+    width: 35%;
+    margin: 80px 0 0 7%;
+  }
+
+  .general {
+    font-size: 30px;
+    left: 10%;
+    top: 150px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .general > .item_1,
+  .general > .item_2 {
+    font-size: 25px;
+  }
+
+  .general > .item_2 > span {
+    font-size: 20px;
+  }
+
+  .Smedia > .fa {
+    font-size: 18px;
+  }
+  .Smedia {
+    flex-direction: row;
+    top: 350px;
+    right: 10%;
+  }
+
+  .mode {
+    top: 70px;
+    right: 100px;
+    font-size: 14px;
+  }
+
+  .drawing {
+    height: 500px;
+  }
+}
+
+/* Styles for extra small screens (e.g., very small devices) */
+@media (max-width: 480px) {
+  .headi {
+    font-size: 1.2em;
+  }
+  .name {
+    font-size: 1.2em;
+  }
+
+  .Hire {
+    width: 100px;
+    height: 28px;
+    font-size: 20px;
+  }
+
+  .dow {
+    font-size: 1.2em;
+    top: 80%;
+    left: 54%;
+  }
+
+  .pic {
+    width: 200px;
+    height: 250px;
+    margin: 180px 10%;
+  }
+
+  .general {
+    font-size: 20px;
+    bottom: 60px;
+    text-align: center;
+  }
+
+  .Smedia > .fa {
+    font-size: 1.2em;
+  }
+  .Smedia {
+    flex-direction: row;
+    top: 70%;
+    gap: 10px;
+  }
+
+  .drawing {
+    width: 90%;
+    height: 95%;
+  }
+}
