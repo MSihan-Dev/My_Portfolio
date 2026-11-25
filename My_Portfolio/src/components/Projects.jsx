@@ -1,10 +1,10 @@
-import SectionTitle from './SectionTitle'
-import { projects, profile } from '../data'
-import { FaExternalLinkAlt, FaGithub, FaStar } from 'react-icons/fa'
+import SectionTitle from "./SectionTitle";
+import { projects, profile } from "../data";
+import { FaExternalLinkAlt, FaGithub, FaStar } from "react-icons/fa";
 
 export default function Projects() {
   return (
-    <section id="projects" className="relative py-24">
+    <section id="projects" className="relative py-5">
       <div className="absolute inset-0 bg-linear-to-b from-transparent via-slate-900/50 to-transparent" />
       <div className="relative mx-auto max-w-6xl px-6">
         <SectionTitle
@@ -25,8 +25,12 @@ export default function Projects() {
 
               <div className="relative flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-widest text-teal-300">{p.type}</p>
-                  <h3 className="mt-2 font-display text-2xl font-bold text-white">{p.title}</h3>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-teal-300">
+                    {p.type}
+                  </p>
+                  <h3 className="mt-2 font-display text-2xl font-bold text-white">
+                    {p.title}
+                  </h3>
                 </div>
                 {p.featured && (
                   <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-amber-400/10 px-3 py-1 text-xs font-semibold text-amber-300">
@@ -35,12 +39,17 @@ export default function Projects() {
                 )}
               </div>
 
-              <p className="relative mt-4 flex-1 leading-relaxed text-slate-400">{p.description}</p>
+              <p className="relative mt-4 flex-1 leading-relaxed text-slate-400">
+                {p.description}
+              </p>
 
               {p.highlights && (
                 <ul className="relative mt-4 flex flex-wrap gap-2">
                   {p.highlights.map((h) => (
-                    <li key={h} className="rounded-lg border border-teal-400/20 bg-teal-400/5 px-3 py-1 text-xs font-medium text-teal-200">
+                    <li
+                      key={h}
+                      className="rounded-lg border border-teal-400/20 bg-teal-400/5 px-3 py-1 text-xs font-medium text-teal-200"
+                    >
                       {h}
                     </li>
                   ))}
@@ -49,7 +58,10 @@ export default function Projects() {
 
               <div className="relative mt-5 flex flex-wrap gap-2">
                 {p.tags.map((t) => (
-                  <span key={t} className="rounded-full bg-slate-800/80 px-3 py-1 text-xs text-slate-300">
+                  <span
+                    key={t}
+                    className="rounded-full bg-slate-800/80 px-3 py-1 text-xs text-slate-300"
+                  >
                     {t}
                   </span>
                 ))}
@@ -80,5 +92,5 @@ export default function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }

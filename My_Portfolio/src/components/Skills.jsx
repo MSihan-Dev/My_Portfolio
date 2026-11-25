@@ -1,9 +1,9 @@
-import SectionTitle from './SectionTitle'
-import { skillGroups } from '../data'
+import SectionTitle from "./SectionTitle";
+import { skillGroups } from "../data";
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-24">
+    <section id="skills" className="relative py-15">
       <div className="absolute inset-0 -z-0 bg-linear-to-b from-transparent via-slate-900/50 to-transparent" />
       <div className="relative mx-auto max-w-6xl px-6">
         <SectionTitle
@@ -16,7 +16,7 @@ export default function Skills() {
           {skillGroups.map((group, gi) => (
             <div
               key={group.title}
-              data-aos={gi % 2 === 0 ? 'fade-right' : 'fade-left'}
+              data-aos={gi % 2 === 0 ? "fade-right" : "fade-left"}
               className="glass glow-card rounded-3xl p-7"
             >
               <h3 className="mb-5 flex items-center gap-3 font-display text-xl font-semibold text-white">
@@ -41,5 +41,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }

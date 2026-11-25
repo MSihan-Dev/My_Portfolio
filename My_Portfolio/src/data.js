@@ -159,7 +159,7 @@ export const experience = [
   {
     role: "Web Developer (MERN Stack)",
     company: "HeyMilo",
-    period: "Dec 2025 – Aug 2026",
+    period: "Jan 2025 – Aug 2026",
     points: [
       "Designed, developed, tested and maintained web applications using the MERN stack.",
       "Built responsive React.js interfaces and RESTful APIs with Node.js and Express.js.",
@@ -168,9 +168,20 @@ export const experience = [
     ],
   },
   {
+    role: "Data Entry",
+    company: "Super Market",
+    period: "Jan 2024 – Dec 2024",
+    points: [
+      "Maintained and updated product records, including product names, codes, prices, quantities, and other inventory details.",
+      "Entered and verified product information, pricing, MRP, barcode details, and stock records in the system.",
+      "Assisted with inventory updates, stock adjustments, product registration, and price changes.",
+      "Supported POS operations by ensuring accurate product and pricing information.",
+    ],
+  },
+  {
     role: "Freelance Software Developer",
     company: "Self-Employed",
-    period: "2025 – Present",
+    period: "2023 – 2024",
     points: [
       "Delivered full-stack web and desktop applications using Node.js, .NET and SQL databases.",
       "Developed REST APIs, authentication systems, role-based access control and database-driven features.",

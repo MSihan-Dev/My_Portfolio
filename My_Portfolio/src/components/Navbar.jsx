@@ -3,6 +3,8 @@ import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import { navLinks, profile } from '../data'
 
 export default function Navbar() {
+  const cvHref = `${import.meta.env.BASE_URL}${profile.cv.replace(/^\/+/, "")}`;
+
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const [active, setActive] = useState('home')
@@ -65,7 +67,7 @@ export default function Navbar() {
         </ul>
 
         <a
-          href={profile.cv}
+          href={cvHref}
           download
           className="hidden rounded-xl bg-linear-to-r from-teal-400 to-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 transition hover:shadow-lg hover:shadow-teal-400/30 lg:block"
         >
@@ -103,7 +105,7 @@ export default function Navbar() {
           ))}
           <li className="p-2">
             <a
-              href={profile.cv}
+              href={cvHref}
               download
               className="block rounded-xl bg-linear-to-r from-teal-400 to-cyan-400 px-4 py-3 text-center text-sm font-semibold text-slate-950"
             >
